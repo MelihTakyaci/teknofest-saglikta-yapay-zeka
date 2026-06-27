@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-06-25T11:20:22.333406",
+  "threshold_used": 0.365,
+  "stored_ensemble_threshold": 0.305,
+  "step1_feature_mapping": "Features are anonymized (AL_*, EK_*, CAT_*, AA_*) with genomic coordinates removed and NDA-restricted provenance. Mapping EK_7 / AL_327 to ClinVar / dbNSFP is INFEASIBLE -> no independent external dataset can be built. Pivoting to a strictly isolated held-out cohort.",
+  "cohort_definition": "Panel variants (CFTR/PAH/KANSER) absent from MASTER training set; never seen by frozen base models.",
+  "union": {
+    "n": 293,
+    "pathogenic_rate": 0.44368600682593856,
+    "roc_auc": 0.8934403020292591,
+    "pr_auc": 0.8557236087579725,
+    "f1_raw": 0.8,
+    "f1_balanced": 0.8291706625526409,
+    "sensitivity": 0.9384615384615385,
+    "specificity": 0.6748466257668712,
+    "precision": 0.6971428571428572,
+    "mcc": 0.6212754553298192,
+    "roc_auc_balanced": 0.8934403020292593
+  },
+  "panels": {
+    "CFTR": {
+      "n": 34,
+      "pathogenic_rate": 0.5,
+      "roc_auc": 0.9619377162629758,
+      "pr_auc": 0.9639613740232936,
+      "f1_raw": 0.8235294117647058,
+      "f1_balanced": 0.8235294117647058,
+      "sensitivity": 0.8235294117647058,
+      "specificity": 0.8235294117647058,
+      "precision": 0.8235294117647058,
+      "mcc": 0.6470588235294118,
+      "roc_auc_balanced": 0.9619377162629758
+    },
+    "PAH": {
+      "n": 117,
+      "pathogenic_rate": 0.5811965811965812,
+      "roc_auc": 0.8187274909963985,
+      "pr_auc": 0.8272006834161945,
+      "f1_raw": 0.8387096774193549,
+      "f1_balanced": 0.7949581929364783,
+      "sensitivity": 0.9558823529411765,
+      "specificity": 0.5510204081632653,
+      "precision": 0.7471264367816092,
+      "mcc": 0.5727391881024702,
+      "roc_auc_balanced": 0.8187274909963984
+    },
+    "KANSER": {
+      "n": 142,
+      "pathogenic_rate": 0.31690140845070425,
+      "roc_auc": 0.9415807560137457,
+      "pr_auc": 0.8848424009247027,
+      "f1_raw": 0.7413793103448276,
+      "f1_balanced": 0.851572070232748,
+      "sensitivity": 0.9555555555555556,
+      "specificity": 0.711340206185567,
+      "precision": 0.6056338028169014,
+      "mcc": 0.6205713658882164,
+      "roc_auc_balanced": 0.9415807560137457
+    }
+  }
+}

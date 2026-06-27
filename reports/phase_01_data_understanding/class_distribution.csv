@@ -1,0 +1,5 @@
+Dataset,Total N,Pathogenic (1),Benign (0),Other/Unknown,Positive Ratio,Imbalance Ratio
+CFTR,111,90,21,0,0.8108,4.29
+KANSER,388,268,120,0,0.6907,2.23
+MASTER,2931,2149,782,0,0.7332,2.75
+PAH,372,310,62,0,0.8333,5.0

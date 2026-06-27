@@ -1,0 +1,16 @@
+Step,Priority,Applies_To,Reason
+Drop Variant_ID from features,MANDATORY,All models,"Identifier, not predictive; leakage risk"
+Drop constant columns (MASTER: 57),MANDATORY,All models,Zero information content
+Use class weights (is_unbalance / scale_pos_weight),MANDATORY,All models,73% pathogenic imbalance
+Stratified K-Fold CV,MANDATORY,All models,Preserve label ratio in folds
+Variant_ID-aware splitting for panel evaluation,MANDATORY,Panel evaluation,Prevent overlap leakage
+Native missing handling (no imputation),RECOMMENDED,GBDT models,LightGBM/XGBoost handle NaN natively
+Add missingness indicator features,RECOMMENDED,All models,Missingness is label-associated in KANSER
+One-hot encode CAT_3/4/5,RECOMMENDED,All models,Low cardinality (4-5 values)
+Label encode CAT_1/CAT_2,RECOMMENDED,GBDT models,High cardinality; or use CatBoost native
+Binary flag for CAT_6,RECOMMENDED,All models,97.7% missing; binary presence flag
+One-hot encode AA_1/AA_2,RECOMMENDED,All models,20 amino acid categories each
+EK ablation (train with and without EK_4/5/6),HIGH,All models,Quantify circularity risk
+Median imputation + scaling,CONDITIONAL,Linear models only,Linear models cannot handle NaN
+Avoid SMOTE / oversampling,WARNING,All models,Synthetic genomic variants are biologically meaningless
+Avoid target encoding outside CV folds,WARNING,All models,Creates label leakage

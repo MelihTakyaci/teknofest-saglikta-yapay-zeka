@@ -1,0 +1,5 @@
+File,Type,Size (MB),Rows,Columns,Role
+YARISMA_TRAIN_CFTR.csv,CSV,0.28,111,353,Panel dataset (CFTR)
+YARISMA_TRAIN_KANSER.csv,CSV,0.66,388,353,Panel dataset (KANSER)
+YARISMA_TRAIN_MASTER.csv,CSV,5.14,2931,353,General training set
+YARISMA_TRAIN_PAH.csv,CSV,0.8,372,353,Panel dataset (PAH)

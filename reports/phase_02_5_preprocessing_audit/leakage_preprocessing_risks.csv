@@ -1,0 +1,12 @@
+Feature,Severity,Reason,Action,CorrWithLabel
+EK_1,LOW,Likely CADD (not ClinVar-trained); corr_w_label=0.085,KEEP — low risk,0.0851
+EK_2,LOW,Likely CADD (not ClinVar-trained); corr_w_label=0.316,KEEP — low risk,0.3163
+EK_3,MEDIUM,Unclear provenance; corr_w_label=0.296,KEEP but monitor,0.2961
+EK_4,HIGH,"Likely ClinVar-trained meta-predictor [0,1]; corr_w_label=0.320",ABLATION — test with and without,0.3202
+EK_5,LOW,Unclear provenance; corr_w_label=0.154,KEEP but monitor,0.1545
+EK_6,HIGH,"Likely ClinVar-trained meta-predictor [0,1]; corr_w_label=0.302",ABLATION — test with and without,0.302
+EK_7,NONE,Conservation score (phyloP/GERP++); corr_w_label=0.380,KEEP — safe,0.3797
+EK_8,LOW,Unclear provenance; corr_w_label=0.232,KEEP but monitor,0.2318
+EK_9,NONE,Conservation score (phyloP/GERP++); corr_w_label=0.322,KEEP — safe,0.3218
+AL_223..AL_334 block,MEDIUM,Possible in-silico predictor outputs (avg |corr|=nan),ABLATION — test model without this block,
+Variant_ID,HIGH,Must not be used as feature; only for splitting/identification,EXCLUDE from features,

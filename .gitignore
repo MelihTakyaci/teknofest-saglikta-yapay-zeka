@@ -1,0 +1,21 @@
+# Claude tooling
+.claude/
+
+# OS / Python hygiene
+.DS_Store
+**/.DS_Store
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# NDA-protected competition data & official specification documents
+EĞİTİM (TRAIN) SETLERİ 2/
+2026-_Sağlıkta_Yapay_Zeka_Türkçe_Şartname_v4_6k439.pdf
+2026_Sağlıkta_Yapay_Zeka_V01.docx
+
+# Auto-generated phase report markdown (superseded by curated analysis/PDR docs)
+reports/phase_01_data_understanding/*.md
+reports/phase_02_specialized_model_research/*.md
+reports/phase_02_5_preprocessing_audit/*.md
+reports/phase_03_pipeline_b/*.md
+reports/data_understanding_and_preparation/*.md

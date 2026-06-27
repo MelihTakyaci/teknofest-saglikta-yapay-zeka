@@ -1,0 +1,5 @@
+Dataset,Rows,Pathogenic,Benign,Pos Ratio,Mean Missing% (AL features),Constant Cols,Difficulty Estimate
+CFTR,111,90,21,0.8108,31.43,70,very small sample; imbalanced; high missingness; many constant cols
+KANSER,388,268,120,0.6907,59.48,69,small sample; high missingness; many constant cols
+MASTER,2931,2149,782,0.7332,56.85,57,imbalanced; high missingness; many constant cols
+PAH,372,310,62,0.8333,56.54,91,small sample; imbalanced; high missingness; many constant cols

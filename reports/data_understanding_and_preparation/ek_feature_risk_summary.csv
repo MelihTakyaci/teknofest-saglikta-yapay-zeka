@@ -1,0 +1,10 @@
+Column,N_Present,Miss_Pct,Min,Max,Mean,Std,Range_0_1,Correlation_with_Label,Effect_Size,MannWhitney_pval,Leakage_Risk,Risk_Reason,Recommendation
+EK_1,2572,12.25,0.856,6.17,5.263,0.594,False,0.0851,0.1968,2.64e-03,LOW,"Not [0,1]; likely conservation or raw score",KEEP
+EK_2,2572,12.25,-11.9,6.17,4.464,2.127,False,0.3163,0.7318,1.01e-39,MEDIUM,Strong label correlation; origin unknown,MONITOR
+EK_3,1601,45.38,-11.369,7.01,3.046,2.505,False,0.2961,0.65,3.45e-33,LOW,"Not [0,1]; likely conservation or raw score",KEEP
+EK_4,2572,12.25,0.0,1.0,0.897,0.266,True,0.3202,0.7409,2.30e-27,HIGH,"[0,1] range + strong label correlation → possible ClinVar-trained meta-predictor",ABLATION
+EK_5,2572,12.25,0.0,1.0,0.805,0.305,True,0.1545,0.3575,2.39e-10,MEDIUM,"[0,1] range suggests predictor score",MONITOR
+EK_6,2572,12.25,0.0,1.0,0.906,0.259,True,0.302,0.6987,4.36e-18,HIGH,"[0,1] range + strong label correlation → possible ClinVar-trained meta-predictor",ABLATION
+EK_7,2572,12.25,-3.322,10.003,5.944,3.173,False,0.3797,0.8785,5.72e-73,MEDIUM,Strong label correlation; origin unknown,MONITOR
+EK_8,2572,12.25,-5.716,0.756,0.559,0.345,False,0.2318,0.5364,5.70e-08,LOW,"Not [0,1]; likely conservation or raw score",KEEP
+EK_9,2324,20.71,-20.0,11.934,7.482,3.906,False,0.3218,0.7422,1.78e-45,MEDIUM,Strong label correlation; origin unknown,MONITOR

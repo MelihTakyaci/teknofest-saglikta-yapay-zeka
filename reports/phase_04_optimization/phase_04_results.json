@@ -1,0 +1,155 @@
+{
+  "config": {
+    "seed": 42,
+    "n_folds": 5,
+    "cost_fn": 2.0,
+    "cost_fp": 1.0,
+    "target_prior": 0.5,
+    "ek_ablation": [
+      "EK_4",
+      "EK_5",
+      "EK_6",
+      "EK_7"
+    ],
+    "has_catboost": true,
+    "has_shap": true,
+    "timestamp": "2026-06-25T10:38:47.759470"
+  },
+  "pillar1_threshold": {
+    "calibrated_threshold": 0.365,
+    "master_calibrated": {
+      "threshold": 0.365,
+      "roc_auc": 0.8461126271780501,
+      "pr_auc": 0.8235405086815191,
+      "f1_balanced": 0.7808012134460817,
+      "sensitivity": 0.9483480688692415,
+      "specificity": 0.5191815856777438,
+      "mcc": 0.5176223484021876
+    },
+    "master_naive_t05": {
+      "threshold": 0.5,
+      "roc_auc": 0.8461126271780501,
+      "pr_auc": 0.8235405086815191,
+      "f1_balanced": 0.7914910881913341,
+      "sensitivity": 0.8659841786877618,
+      "specificity": 0.677749360613801,
+      "mcc": 0.5536302041126089
+    },
+    "panels": [
+      {
+        "threshold": 0.365,
+        "roc_auc": 0.9402116402116403,
+        "pr_auc": 0.9499011241524817,
+        "f1_balanced": 0.8412017167381974,
+        "sensitivity": 0.9333333333333333,
+        "specificity": 0.7142857142857141,
+        "mcc": 0.663738488026576,
+        "panel": "CFTR",
+        "n": 111,
+        "n_shared": 77,
+        "n_nonshared": 34,
+        "raw_f1": 0.9333333333333333
+      },
+      {
+        "threshold": 0.365,
+        "roc_auc": 0.7720083246618114,
+        "pr_auc": 0.7478749325534519,
+        "f1_balanced": 0.7388535031847122,
+        "sensitivity": 0.9354838709677422,
+        "specificity": 0.40322580645161293,
+        "mcc": 0.4000907338108522,
+        "panel": "PAH",
+        "n": 372,
+        "n_shared": 255,
+        "n_nonshared": 117,
+        "raw_f1": 0.9105180533751962
+      },
+      {
+        "threshold": 0.365,
+        "roc_auc": 0.9140547263681592,
+        "pr_auc": 0.9085595225997861,
+        "f1_balanced": 0.8017683110619913,
+        "sensitivity": 0.9925373134328358,
+        "specificity": 0.5166666666666658,
+        "mcc": 0.578959788132023,
+        "panel": "KANSER",
+        "n": 388,
+        "n_shared": 246,
+        "n_nonshared": 142,
+        "raw_f1": 0.8986486486486487
+      }
+    ]
+  },
+  "pillar2_ablation": {
+    "dropped_columns": [
+      "EK_4",
+      "EK_5",
+      "EK_6",
+      "EK_7",
+      "miss_EK_4",
+      "miss_EK_5",
+      "miss_EK_6",
+      "miss_EK_7"
+    ],
+    "baseline_auc": 0.8461126271780486,
+    "ablated_auc": 0.8348684750773274,
+    "delta_auc": 0.011244152100721161,
+    "verdict": "LOW dependence \u2014 robust to EK leakage",
+    "ablated_calibrated": {
+      "threshold": 0.385,
+      "roc_auc": 0.834868475077329,
+      "pr_auc": 0.8016555231196235,
+      "f1_balanced": 0.7740046395738405,
+      "sensitivity": 0.9381107491856678,
+      "specificity": 0.5140664961636774,
+      "mcc": 0.4992894655581674
+    }
+  },
+  "pillar3_shap": {
+    "available": true,
+    "top_features": [
+      "EK_7",
+      "AL_327",
+      "AA_1_R",
+      "EK_2",
+      "AL_1",
+      "AL_16",
+      "EK_6",
+      "EK_9",
+      "AL_311",
+      "AL_319",
+      "AL_26",
+      "EK_4",
+      "AL_11",
+      "AL_215",
+      "AL_8"
+    ]
+  },
+  "pillar4_ensemble": {
+    "base_learners": [
+      "lgb",
+      "xgb",
+      "cat"
+    ],
+    "oof_auc": {
+      "lightgbm": 0.8461126271780486,
+      "xgboost": 0.849139074975692,
+      "catboost": 0.8538159067620816,
+      "stacked": 0.8581229121021018
+    },
+    "stacked_calibrated": {
+      "threshold": 0.305,
+      "roc_auc": 0.8581229121021031,
+      "pr_auc": 0.8345310789267891,
+      "f1_balanced": 0.7973855250223708,
+      "sensitivity": 0.9055374592833877,
+      "specificity": 0.6342710997442369,
+      "mcc": 0.5608375452749174
+    },
+    "meta_coefficients": {
+      "lgb": 1.4742480965691656,
+      "xgb": 1.2889329471554505,
+      "cat": 2.9170073918411834
+    }
+  }
+}

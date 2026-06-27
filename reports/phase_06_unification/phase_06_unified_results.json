@@ -1,0 +1,170 @@
+{
+  "timestamp": "2026-06-27T11:25:36.444956",
+  "threshold": 0.305,
+  "oof_auc": {
+    "lightgbm": 0.8461,
+    "xgboost": 0.8491,
+    "catboost": 0.8538,
+    "stacked": 0.8581
+  },
+  "master": {
+    "n": 2931,
+    "pathogenic_rate": 0.7331968611395429,
+    "roc_auc": 0.8581229121021018,
+    "pr_auc": 0.9302051376411056,
+    "f1_raw": 0.888381648025565,
+    "f1_balanced": 0.7973855250223708,
+    "sensitivity": 0.9055374592833876,
+    "specificity": 0.6342710997442456,
+    "precision": 0.8718637992831542,
+    "mcc": 0.560242004968695,
+    "roc_auc_balanced": 0.8581229121021031
+  },
+  "panels": {
+    "CFTR": {
+      "n": 111,
+      "pathogenic_rate": 0.8108108108108109,
+      "roc_auc": 0.9544973544973544,
+      "pr_auc": 0.9889797190371579,
+      "f1_raw": 0.9310344827586207,
+      "f1_balanced": 0.881118881118881,
+      "sensitivity": 0.9,
+      "specificity": 0.8571428571428571,
+      "precision": 0.9642857142857143,
+      "mcc": 0.6911737035184239,
+      "roc_auc_balanced": 0.9544973544973545,
+      "n_shared": 77,
+      "n_nonshared": 34
+    },
+    "KANSER": {
+      "n": 388,
+      "pathogenic_rate": 0.6907216494845361,
+      "roc_auc": 0.9231654228855721,
+      "pr_auc": 0.958757577684656,
+      "f1_raw": 0.9154929577464789,
+      "f1_balanced": 0.8423326133909284,
+      "sensitivity": 0.9701492537313433,
+      "specificity": 0.6666666666666666,
+      "precision": 0.8666666666666667,
+      "mcc": 0.7028618460350438,
+      "roc_auc_balanced": 0.9231654228855721,
+      "n_shared": 246,
+      "n_nonshared": 142
+    },
+    "PAH": {
+      "n": 372,
+      "pathogenic_rate": 0.8333333333333334,
+      "roc_auc": 0.7934963579604579,
+      "pr_auc": 0.9395112852696937,
+      "f1_raw": 0.907051282051282,
+      "f1_balanced": 0.7566844919786088,
+      "sensitivity": 0.9129032258064517,
+      "specificity": 0.5,
+      "precision": 0.9012738853503185,
+      "mcc": 0.4241760530277761,
+      "roc_auc_balanced": 0.7934963579604586,
+      "n_shared": 255,
+      "n_nonshared": 117
+    }
+  },
+  "held_out_union": {
+    "n": 293,
+    "pathogenic_rate": 0.44368600682593856,
+    "roc_auc": 0.8934403020292591,
+    "pr_auc": 0.8557236087579725,
+    "f1_raw": 0.797427652733119,
+    "f1_balanced": 0.8281570105711706,
+    "sensitivity": 0.9538461538461539,
+    "specificity": 0.6503067484662577,
+    "precision": 0.6850828729281768,
+    "mcc": 0.6176807200744026,
+    "roc_auc_balanced": 0.8934403020292593
+  },
+  "held_out_panels": {
+    "CFTR": {
+      "n": 34,
+      "pathogenic_rate": 0.5,
+      "roc_auc": 0.9619377162629758,
+      "pr_auc": 0.9639613740232936,
+      "f1_raw": 0.8235294117647058,
+      "f1_balanced": 0.8235294117647058,
+      "sensitivity": 0.8235294117647058,
+      "specificity": 0.8235294117647058,
+      "precision": 0.8235294117647058,
+      "mcc": 0.6470588235294118,
+      "roc_auc_balanced": 0.9619377162629758
+    },
+    "KANSER": {
+      "n": 142,
+      "pathogenic_rate": 0.31690140845070425,
+      "roc_auc": 0.9415807560137457,
+      "pr_auc": 0.8848424009247027,
+      "f1_raw": 0.7457627118644068,
+      "f1_balanced": 0.8589253370899579,
+      "sensitivity": 0.9777777777777777,
+      "specificity": 0.7010309278350515,
+      "precision": 0.6027397260273972,
+      "mcc": 0.6319075612131625,
+      "roc_auc_balanced": 0.9415807560137457
+    },
+    "PAH": {
+      "n": 117,
+      "pathogenic_rate": 0.5811965811965812,
+      "roc_auc": 0.8187274909963985,
+      "pr_auc": 0.8272006834161945,
+      "f1_raw": 0.8301886792452831,
+      "f1_balanced": 0.7824824582627632,
+      "sensitivity": 0.9705882352941176,
+      "specificity": 0.4897959183673469,
+      "precision": 0.7252747252747253,
+      "mcc": 0.5463431384225386,
+      "roc_auc_balanced": 0.8187274909963984
+    }
+  },
+  "error_analysis": {
+    "n_fp": 286,
+    "n_fn": 203,
+    "fn_fp_ratio": 0.71,
+    "missingness_bands": [
+      {
+        "band": "0-25%",
+        "n": 921,
+        "errors": 187,
+        "error_rate": 0.203,
+        "fp": 97,
+        "fn": 90
+      },
+      {
+        "band": "25-50%",
+        "n": 260,
+        "errors": 37,
+        "error_rate": 0.1423,
+        "fp": 31,
+        "fn": 6
+      },
+      {
+        "band": "50-75%",
+        "n": 429,
+        "errors": 51,
+        "error_rate": 0.1189,
+        "fp": 46,
+        "fn": 5
+      },
+      {
+        "band": "75-100%",
+        "n": 1321,
+        "errors": 214,
+        "error_rate": 0.162,
+        "fp": 112,
+        "fn": 102
+      }
+    ],
+    "ek7_mean": {
+      "correct": 6.093,
+      "false_positive": 5.793,
+      "false_negative": 3.131
+    },
+    "pah_overlap_error_rate": 0.1216,
+    "nonpah_error_rate": 0.1712
+  }
+}

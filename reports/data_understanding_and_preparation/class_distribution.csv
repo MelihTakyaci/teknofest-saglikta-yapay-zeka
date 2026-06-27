@@ -1,0 +1,5 @@
+Dataset,Total,Pathogenic,Benign,Other,Pathogenic_Rate,Imbalance_Ratio,Is_Binary
+MASTER,2931,2149,782,0,0.7332,2.75,True
+CFTR,111,90,21,0,0.8108,4.29,True
+PAH,372,310,62,0,0.8333,5.0,True
+KANSER,388,268,120,0,0.6907,2.23,True

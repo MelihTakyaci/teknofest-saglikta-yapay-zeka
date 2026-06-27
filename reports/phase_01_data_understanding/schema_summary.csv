@@ -1,0 +1,5 @@
+Dataset,Shape,Numeric Cols,Object Cols,Constant Cols,Duplicate Rows
+CFTR,111x353,344,9,70,0
+KANSER,388x353,344,9,69,0
+MASTER,2931x353,344,9,57,0
+PAH,372x353,345,8,91,0

@@ -1,0 +1,5 @@
+Dataset,Verdict,Problems,Severity,Action,CanTrainDirect
+CFTR,High-risk / unreliable without special handling,70 constant cols; class imb 4.3:1; very small (n=111),MEDIUM,See detailed plan,No — need special handling
+KANSER,Requires careful preprocessing,high missingness (59%); 69 constant cols; small (n=388),MEDIUM,See detailed plan,No — need special handling
+MASTER,Requires careful preprocessing,high missingness (57%); 57 constant cols,MEDIUM,See detailed plan,No — need special handling
+PAH,Requires careful preprocessing,high missingness (57%); 91 constant cols; class imb 5.0:1; small (n=372),MEDIUM,See detailed plan,No — need special handling

@@ -1,0 +1,5 @@
+Dataset,Rows,Columns,Schema_Match,AL_count,CAT_count,EK_count,AA_count,Has_Variant_ID,Has_Label
+MASTER,2931,353,True,334,6,9,2,True,True
+CFTR,111,353,True,334,6,9,2,True,True
+PAH,372,353,True,334,6,9,2,True,True
+KANSER,388,353,True,334,6,9,2,True,True

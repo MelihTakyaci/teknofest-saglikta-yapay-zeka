@@ -1,0 +1,25 @@
+Dataset,Column,N_Unique,Miss_Pct,Sample_Values
+MASTER,CAT_1,30,37.02,"['AFR', 'AMR', 'EAS', 'EAS&EUR', 'EAS&EUR&SAS&gnomADe_ASJ&gnomADe_FIN&gnomADg_AMI&gnomADg_ASJ&gnomADg_EAS&gnomADg_FIN&gnomADg_MID&gnomADg_SAS', 'EAS&SAS', 'EUR', 'SAS']"
+CFTR,CAT_1,23,14.41,"['AFR', 'EAS', 'EUR', 'SAS', 'gnomADe_AFR', 'gnomADe_AFR&gnomADe_AMR&gnomADe_ASJ&gnomADe_EAS&gnomADe_FIN&gnomADe_MID&gnomADe_NFE&gnomADe_REMAINING&gnomADe_SAS', 'gnomADe_AMR', 'gnomADe_ASJ']"
+PAH,CAT_1,24,36.29,"['AFR', 'AMR', 'EAS', 'EUR', 'SAS', 'gnomADe_AFR', 'gnomADe_AFR&gnomADe_AMR&gnomADe_ASJ&gnomADe_EAS&gnomADe_FIN&gnomADe_MID&gnomADe_NFE&gnomADe_REMAINING&gnomADe_SAS', 'gnomADe_AMR']"
+KANSER,CAT_1,26,42.78,"['AFR', 'AMR', 'EAS', 'EUR', 'SAS', 'gnomADe_AFR', 'gnomADe_AFR&gnomADe_AMR&gnomADe_ASJ&gnomADe_EAS&gnomADe_FIN&gnomADe_MID&gnomADe_NFE&gnomADe_REMAINING&gnomADe_SAS', 'gnomADe_AMR']"
+MASTER,CAT_2,7,59.16,"['AllofUs_AFR', 'AllofUs_AMR', 'AllofUs_EAS', 'AllofUs_EUR', 'AllofUs_MID', 'AllofUs_OTH', 'AllofUs_SAS']"
+CFTR,CAT_2,7,33.33,"['AllofUs_AFR', 'AllofUs_AMR', 'AllofUs_EAS', 'AllofUs_EUR', 'AllofUs_MID', 'AllofUs_OTH', 'AllofUs_SAS']"
+PAH,CAT_2,7,61.29,"['AllofUs_AFR', 'AllofUs_AMR', 'AllofUs_EAS', 'AllofUs_EUR', 'AllofUs_MID', 'AllofUs_OTH', 'AllofUs_SAS']"
+KANSER,CAT_2,7,64.18,"['AllofUs_AFR', 'AllofUs_AMR', 'AllofUs_EAS', 'AllofUs_EUR', 'AllofUs_MID', 'AllofUs_OTH', 'AllofUs_SAS']"
+MASTER,CAT_3,5,12.25,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+CFTR,CAT_3,5,0.0,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+PAH,CAT_3,4,2.96,"['A/A', 'C/C', 'G/G', 'T/T']"
+KANSER,CAT_3,5,5.93,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+MASTER,CAT_4,5,12.25,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+CFTR,CAT_4,5,0.0,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+PAH,CAT_4,4,2.96,"['A/A', 'C/C', 'G/G', 'T/T']"
+KANSER,CAT_4,5,5.93,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+MASTER,CAT_5,5,12.25,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+CFTR,CAT_5,5,0.0,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+PAH,CAT_5,4,2.96,"['A/A', 'C/C', 'G/G', 'T/T']"
+KANSER,CAT_5,5,5.93,"['./.', 'A/A', 'C/C', 'G/G', 'T/T']"
+MASTER,CAT_6,3,97.71,"['decoy&segdup', 'lcr', 'segdup']"
+CFTR,CAT_6,1,98.2,['decoy&segdup']
+PAH,CAT_6,0,100.0,[]
+KANSER,CAT_6,1,98.97,['segdup']

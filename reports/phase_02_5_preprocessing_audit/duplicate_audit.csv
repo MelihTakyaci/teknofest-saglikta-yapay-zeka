@@ -1,0 +1,5 @@
+Dataset,ExactDuplicates,FeatureVectorDuplicates,ConflictingLabels,VariantIDDuplicates
+CFTR,0,0,0,0
+KANSER,0,3,0,0
+MASTER,0,116,1,0
+PAH,0,5,1,0

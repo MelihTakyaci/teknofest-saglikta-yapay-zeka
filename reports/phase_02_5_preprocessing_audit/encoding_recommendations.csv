@@ -1,0 +1,9 @@
+Feature,NUnique,MissPct,SampleValues,RecommendedEncoding
+CAT_1,30,37.02,"['gnomADe_EAS', 'gnomADe_FIN', 'gnomADe_NFE', 'gnomADg_AMR', 'gnomADe_SAS', 'EUR",target_encoding_inside_CV (high cardinality) or CatBoost native
+CAT_2,7,59.16,"['AllofUs_EAS', 'AllofUs_EUR', 'AllofUs_AFR', 'AllofUs_AMR', 'AllofUs_OTH', 'All",target_encoding_inside_CV (high cardinality) or CatBoost native
+CAT_3,5,12.25,"['C/C', 'T/T', 'G/G', './.', 'A/A']",ordinal (4-5 genotype values) or one_hot
+CAT_4,5,12.25,"['C/C', 'T/T', 'G/G', './.', 'A/A']",ordinal (4-5 genotype values) or one_hot
+CAT_5,5,12.25,"['C/C', 'T/T', 'G/G', './.', 'A/A']",ordinal (4-5 genotype values) or one_hot
+CAT_6,3,97.71,"['lcr', 'segdup', 'decoy&segdup']",binary_flag (has_region_annotation)
+AA_1,24,11.87,"['R', 'N', 'P', 'V', 'G', 'L', 'I', 'S']",ordinal_or_onehot (20 amino acids — physicochemical grouping optional)
+AA_2,25,11.94,"['Q', 'S', 'A', 'I', 'E', 'C', 'G', 'R']",ordinal_or_onehot (20 amino acids — physicochemical grouping optional)

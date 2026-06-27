@@ -1,0 +1,23 @@
+Risk,Severity,Evidence,Mitigation
+"EK feature EK_1 (float64, 2541 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=2541",Verify EK features are not derived from clinical labels
+"EK feature EK_2 (float64, 2483 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=2483",Verify EK features are not derived from clinical labels
+"EK feature EK_3 (float64, 1601 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=1601",Verify EK features are not derived from clinical labels
+"EK feature EK_4 (float64, 1424 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=1424",Verify EK features are not derived from clinical labels
+"EK feature EK_5 (float64, 1940 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=1940",Verify EK features are not derived from clinical labels
+"EK feature EK_6 (float64, 1374 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=1374",Verify EK features are not derived from clinical labels
+"EK feature EK_7 (float64, 2470 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=2470",Verify EK features are not derived from clinical labels
+"EK feature EK_8 (float64, 2383 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=2383",Verify EK features are not derived from clinical labels
+"EK feature EK_9 (float64, 2163 unique values) - unclear provenance",MEDIUM,"EK prefix suggests external/extra annotation; dtype=float64, nunique=2163",Verify EK features are not derived from clinical labels
+Categorical feature CAT_1 - check for population/ancestry encoding,LOW,"Values include: ['gnomADe_EAS', 'gnomADe_FIN', 'gnomADe_NFE', 'gnomADg_AMR', 'gnomADe_SAS']",Ensure CAT features don't encode test-set-identifiable metadata
+Categorical feature CAT_2 - check for population/ancestry encoding,LOW,"Values include: ['AllofUs_EAS', 'AllofUs_EUR', 'AllofUs_AFR', 'AllofUs_AMR', 'AllofUs_OTH']",Ensure CAT features don't encode test-set-identifiable metadata
+Categorical feature CAT_3 - check for population/ancestry encoding,LOW,"Values include: ['C/C', 'T/T', 'G/G', './.', 'A/A']",Ensure CAT features don't encode test-set-identifiable metadata
+Categorical feature CAT_4 - check for population/ancestry encoding,LOW,"Values include: ['C/C', 'T/T', 'G/G', './.', 'A/A']",Ensure CAT features don't encode test-set-identifiable metadata
+Categorical feature CAT_5 - check for population/ancestry encoding,LOW,"Values include: ['C/C', 'T/T', 'G/G', './.', 'A/A']",Ensure CAT features don't encode test-set-identifiable metadata
+Categorical feature CAT_6 - check for population/ancestry encoding,LOW,"Values include: ['lcr', 'segdup', 'decoy&segdup']",Ensure CAT features don't encode test-set-identifiable metadata
+"AA_1, AA_2 encode amino acid identity (single-letter codes)",LOW,"Values are single amino acid letters (R, Q, N, S, etc.)","These are legitimate variant features, but check for very rare AAs that could identify specific variants"
+Variant_ID could be used to look up external annotations,MEDIUM,IDs like VAR_004572 suggest an indexed database,Do not use Variant_ID as a feature; used only for identification
+77 shared Variant_IDs between MASTER and CFTR,HIGH,77 overlapping variant identifiers,Ensure train/test splits do not leak through shared variants
+255 shared Variant_IDs between MASTER and PAH,HIGH,255 overlapping variant identifiers,Ensure train/test splits do not leak through shared variants
+246 shared Variant_IDs between MASTER and KANSER,HIGH,246 overlapping variant identifiers,Ensure train/test splits do not leak through shared variants
+EK_1 appears to be a continuous score (range 0.86-6.17),MEDIUM,"Mean=5.26, Std=0.59, possibly a pathogenicity predictor score","If this is a pre-computed pathogenicity score, it could be a strong but circular predictor"
+EK_2 appears to be a continuous score (range -11.90-6.17),MEDIUM,"Mean=4.46, Std=2.13, possibly a pathogenicity predictor score","If this is a pre-computed pathogenicity score, it could be a strong but circular predictor"

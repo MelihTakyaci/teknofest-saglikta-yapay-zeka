@@ -1,0 +1,25 @@
+Model,Direct Usability,Indirect (Embedded),Missing Information,Competition Risk,Final Decision
+SIFT,NO,YES,genomic coordinates; protein sequence,Medium — trained independently of ClinVar labels,USE AS EMBEDDED FEATURE
+PolyPhen-2,NO,YES,genomic coordinates; protein sequence,Medium — HumVar trained on disease mutations,USE AS EMBEDDED FEATURE
+MutationTaster,NO,YES,genomic coordinates; protein sequence,High — uses ClinVar/HGMD directly,CITE IN REPORT ONLY
+MutationAssessor,NO,YES,genomic coordinates; protein sequence,"Low — conservation-based, not ClinVar-trained",USE AS EMBEDDED FEATURE
+PROVEAN,NO,YES,genomic coordinates; protein sequence,"Low — sequence-based, not label-trained",USE AS EMBEDDED FEATURE
+FATHMM,NO,YES,genomic coordinates; protein sequence,Medium,USE AS EMBEDDED FEATURE
+REVEL,NO,YES,genomic coordinates,"HIGH — meta-predictor trained on disease-associated variants, potential circularity if ClinVar-derived labels",USE AS EMBEDDED FEATURE
+BayesDel,NO,MAYBE,genomic coordinates,HIGH — uses ClinVar-derived training data,USE AS EMBEDDED FEATURE
+MetaSVM / MetaLR,NO,MAYBE,genomic coordinates,HIGH — ClinVar-trained,USE AS EMBEDDED FEATURE
+ClinPred,NO,MAYBE,genomic coordinates,VERY HIGH — explicitly trained on ClinVar labels,USE AS EMBEDDED FEATURE
+M-CAP,NO,MAYBE,genomic coordinates,HIGH,CITE IN REPORT ONLY
+CADD,NO,NO,genomic coordinates,"Low — trained on simulated vs fixed variants, NOT ClinVar",USE AS EMBEDDED FEATURE
+DANN,NO,MAYBE,genomic coordinates,Low — similar training to CADD,USE AS EMBEDDED FEATURE
+Eigen,NO,MAYBE,genomic coordinates,Low — unsupervised approach,CITE IN REPORT ONLY
+VARITY,NO,NO,genomic coordinates,Medium — uses multiple data sources including some clinical data,CITE IN REPORT ONLY
+MVP / gMVP,NO,MAYBE,genomic coordinates,Medium,USE AS EMBEDDED FEATURE
+MutPred2,NO,MAYBE,protein sequence,Medium,CITE IN REPORT ONLY
+AlphaMissense,NO,MAYBE,None,"LOW — trained on primate sequence data + protein structure, NOT ClinVar labels",USE AS EMBEDDED FEATURE
+EVE,NO,MAYBE,None,"LOW — evolutionary model, no clinical label training",CITE IN REPORT ONLY
+ESM1b / ESM-1v / ESM2,NO,YES,protein sequence,"LOW — unsupervised protein LM, no clinical labels",CITE IN REPORT ONLY
+PrimateAI / PrimateAI-3D,NO,MAYBE,genomic coordinates,"LOW — primate-trained, no ClinVar labels",USE AS EMBEDDED FEATURE
+phyloP,NO,NO,genomic coordinates,"NONE — purely evolutionary, no labels",CITE IN REPORT ONLY
+GERP++,NO,NO,genomic coordinates,NONE — purely evolutionary,CITE IN REPORT ONLY
+phastCons,NO,NO,genomic coordinates,NONE,CITE IN REPORT ONLY

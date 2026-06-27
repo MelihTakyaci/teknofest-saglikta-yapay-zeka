@@ -1,0 +1,5 @@
+Panel,Pathogenic_1,Benign_0,Total,Pathogenic_Pct,Imbalance_Ratio
+MASTER,2149,782,2931,73.3,2.75
+KANSER,268,120,388,69.1,2.23
+PAH,310,62,372,83.3,5.0
+CFTR,90,21,111,81.1,4.29
